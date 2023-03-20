@@ -1,0 +1,1432 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20223.22.1108.0821                               -->
+<workbook original-version='18.1' source-build='2022.3.1 (20223.22.1108.0821)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Full-year_trip_data' inline='true' name='federated.1ajpq2r0gcaima1d4vuvv1uut7fc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='2022_11_trip_data_final' name='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf'>
+            <connection class='textscan' directory='/Users/judy/Desktop/case study/case_study_1(bike-share)/cleaned_data' filename='2022_11_trip_data_final.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation all='true' name='2021_12_trip_data_final.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='ride_id' />
+            <column datatype='string' name='rideable_type' />
+            <column datatype='datetime' name='started_at' />
+            <column datatype='datetime' name='ended_at' />
+            <column datatype='string' name='start_station_name' />
+            <column datatype='string' name='start_station_id' />
+            <column datatype='string' name='end_station_name' />
+            <column datatype='string' name='end_station_id' />
+            <column datatype='real' name='start_lat' />
+            <column datatype='real' name='start_lng' />
+            <column datatype='real' name='end_lat' />
+            <column datatype='real' name='end_lng' />
+            <column datatype='string' name='member_casual' />
+            <column datatype='real' name='ride_length(min)' />
+            <column datatype='integer' name='day_of_week' />
+            <column datatype='string' name='started_at 1' />
+            <column datatype='datetime' name='F16' />
+            <column datatype='integer' name='F17' />
+            <column datatype='integer' name='F18' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2021_12_trip_data_final.csv' table='[2021_12_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='integer' name='day_of_week' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_01_trip_data_final.csv' table='[2022_01_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='integer' name='day_of_week' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_02_trip_data_final.csv' table='[2022_02_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='integer' name='day_of_week' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_03_trip_data_final.csv' table='[2022_03_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='integer' name='day_of_week' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_04_trip_data_final.csv' table='[2022_04_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='integer' name='day_of_week' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_05_trip_data_final.csv' table='[2022_05_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='integer' name='day_of_week' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_06_trip_data_final.csv' table='[2022_06_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='integer' name='day_of_week' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_07_trip_data_final.csv' table='[2022_07_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='integer' name='day_of_week' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_08_trip_data_final.csv' table='[2022_08_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='integer' name='day_of_week' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_09_trip_data_final.csv' table='[2022_09_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='string' name='started_at 1' ordinal='14' />
+              <column datatype='datetime' name='F16' ordinal='15' />
+              <column datatype='integer' name='F17' ordinal='16' />
+              <column datatype='integer' name='F18' ordinal='17' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_10_trip_data_final.csv' table='[2022_10_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='integer' name='day_of_week' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_11_trip_data_final.csv' table='[2022_11_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='integer' name='day_of_week' ordinal='14' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation all='true' name='2021_12_trip_data_final.csv+' type='union'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='ride_id' />
+            <column datatype='string' name='rideable_type' />
+            <column datatype='datetime' name='started_at' />
+            <column datatype='datetime' name='ended_at' />
+            <column datatype='string' name='start_station_name' />
+            <column datatype='string' name='start_station_id' />
+            <column datatype='string' name='end_station_name' />
+            <column datatype='string' name='end_station_id' />
+            <column datatype='real' name='start_lat' />
+            <column datatype='real' name='start_lng' />
+            <column datatype='real' name='end_lat' />
+            <column datatype='real' name='end_lng' />
+            <column datatype='string' name='member_casual' />
+            <column datatype='real' name='ride_length(min)' />
+            <column datatype='integer' name='day_of_week' />
+            <column datatype='string' name='started_at 1' />
+            <column datatype='datetime' name='F16' />
+            <column datatype='integer' name='F17' />
+            <column datatype='integer' name='F18' />
+            <column datatype='string' name='Table Name' />
+          </columns>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2021_12_trip_data_final.csv' table='[2021_12_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='integer' name='day_of_week' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_01_trip_data_final.csv' table='[2022_01_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='integer' name='day_of_week' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_02_trip_data_final.csv' table='[2022_02_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='integer' name='day_of_week' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_03_trip_data_final.csv' table='[2022_03_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='integer' name='day_of_week' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_04_trip_data_final.csv' table='[2022_04_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='integer' name='day_of_week' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_05_trip_data_final.csv' table='[2022_05_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='integer' name='day_of_week' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_06_trip_data_final.csv' table='[2022_06_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='integer' name='day_of_week' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_07_trip_data_final.csv' table='[2022_07_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='integer' name='day_of_week' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_08_trip_data_final.csv' table='[2022_08_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='integer' name='day_of_week' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_09_trip_data_final.csv' table='[2022_09_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='string' name='started_at 1' ordinal='14' />
+              <column datatype='datetime' name='F16' ordinal='15' />
+              <column datatype='integer' name='F17' ordinal='16' />
+              <column datatype='integer' name='F18' ordinal='17' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_10_trip_data_final.csv' table='[2022_10_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='integer' name='day_of_week' ordinal='14' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_11_trip_data_final.csv' table='[2022_11_trip_data_final#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='ride_id' ordinal='0' />
+              <column datatype='string' name='rideable_type' ordinal='1' />
+              <column datatype='datetime' name='started_at' ordinal='2' />
+              <column datatype='datetime' name='ended_at' ordinal='3' />
+              <column datatype='string' name='start_station_name' ordinal='4' />
+              <column datatype='string' name='start_station_id' ordinal='5' />
+              <column datatype='string' name='end_station_name' ordinal='6' />
+              <column datatype='string' name='end_station_id' ordinal='7' />
+              <column datatype='real' name='start_lat' ordinal='8' />
+              <column datatype='real' name='start_lng' ordinal='9' />
+              <column datatype='real' name='end_lat' ordinal='10' />
+              <column datatype='real' name='end_lng' ordinal='11' />
+              <column datatype='string' name='member_casual' ordinal='12' />
+              <column datatype='real' name='ride_length(min)' ordinal='13' />
+              <column datatype='integer' name='day_of_week' ordinal='14' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[2021_12_trip_data_final.csv+]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ride_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ride_id]</local-name>
+            <parent-name>[2021_12_trip_data_final.csv+]</parent-name>
+            <remote-alias>ride_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_12_trip_data_final.csv_E0D17BE4A2214D2BA023E15EAC7D36D3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rideable_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rideable_type]</local-name>
+            <parent-name>[2021_12_trip_data_final.csv+]</parent-name>
+            <remote-alias>rideable_type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_12_trip_data_final.csv_E0D17BE4A2214D2BA023E15EAC7D36D3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>started_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[started_at]</local-name>
+            <parent-name>[2021_12_trip_data_final.csv+]</parent-name>
+            <remote-alias>started_at</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_12_trip_data_final.csv_E0D17BE4A2214D2BA023E15EAC7D36D3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ended_at</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[ended_at]</local-name>
+            <parent-name>[2021_12_trip_data_final.csv+]</parent-name>
+            <remote-alias>ended_at</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_12_trip_data_final.csv_E0D17BE4A2214D2BA023E15EAC7D36D3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_station_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[start_station_name]</local-name>
+            <parent-name>[2021_12_trip_data_final.csv+]</parent-name>
+            <remote-alias>start_station_name</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_12_trip_data_final.csv_E0D17BE4A2214D2BA023E15EAC7D36D3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_station_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[start_station_id]</local-name>
+            <parent-name>[2021_12_trip_data_final.csv+]</parent-name>
+            <remote-alias>start_station_id</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_12_trip_data_final.csv_E0D17BE4A2214D2BA023E15EAC7D36D3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_station_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[end_station_name]</local-name>
+            <parent-name>[2021_12_trip_data_final.csv+]</parent-name>
+            <remote-alias>end_station_name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_12_trip_data_final.csv_E0D17BE4A2214D2BA023E15EAC7D36D3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_station_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[end_station_id]</local-name>
+            <parent-name>[2021_12_trip_data_final.csv+]</parent-name>
+            <remote-alias>end_station_id</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_12_trip_data_final.csv_E0D17BE4A2214D2BA023E15EAC7D36D3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start_lat]</local-name>
+            <parent-name>[2021_12_trip_data_final.csv+]</parent-name>
+            <remote-alias>start_lat</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_12_trip_data_final.csv_E0D17BE4A2214D2BA023E15EAC7D36D3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>start_lng</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[start_lng]</local-name>
+            <parent-name>[2021_12_trip_data_final.csv+]</parent-name>
+            <remote-alias>start_lng</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_12_trip_data_final.csv_E0D17BE4A2214D2BA023E15EAC7D36D3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end_lat]</local-name>
+            <parent-name>[2021_12_trip_data_final.csv+]</parent-name>
+            <remote-alias>end_lat</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_12_trip_data_final.csv_E0D17BE4A2214D2BA023E15EAC7D36D3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>end_lng</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[end_lng]</local-name>
+            <parent-name>[2021_12_trip_data_final.csv+]</parent-name>
+            <remote-alias>end_lng</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_12_trip_data_final.csv_E0D17BE4A2214D2BA023E15EAC7D36D3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>member_casual</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[member_casual]</local-name>
+            <parent-name>[2021_12_trip_data_final.csv+]</parent-name>
+            <remote-alias>member_casual</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_12_trip_data_final.csv_E0D17BE4A2214D2BA023E15EAC7D36D3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ride_length(min)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ride_length(min)]</local-name>
+            <parent-name>[2021_12_trip_data_final.csv+]</parent-name>
+            <remote-alias>ride_length(min)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_12_trip_data_final.csv_E0D17BE4A2214D2BA023E15EAC7D36D3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>day_of_week</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[day_of_week]</local-name>
+            <parent-name>[2021_12_trip_data_final.csv+]</parent-name>
+            <remote-alias>day_of_week</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_12_trip_data_final.csv_E0D17BE4A2214D2BA023E15EAC7D36D3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>started_at 1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[started_at 1]</local-name>
+            <parent-name>[2021_12_trip_data_final.csv+]</parent-name>
+            <remote-alias>started_at 1</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_12_trip_data_final.csv_E0D17BE4A2214D2BA023E15EAC7D36D3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F16</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[F16]</local-name>
+            <parent-name>[2021_12_trip_data_final.csv+]</parent-name>
+            <remote-alias>F16</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_12_trip_data_final.csv_E0D17BE4A2214D2BA023E15EAC7D36D3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F17</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F17]</local-name>
+            <parent-name>[2021_12_trip_data_final.csv+]</parent-name>
+            <remote-alias>F17</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_12_trip_data_final.csv_E0D17BE4A2214D2BA023E15EAC7D36D3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F18</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F18]</local-name>
+            <parent-name>[2021_12_trip_data_final.csv+]</parent-name>
+            <remote-alias>F18</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_12_trip_data_final.csv_E0D17BE4A2214D2BA023E15EAC7D36D3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Table Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Table Name]</local-name>
+            <parent-name>[2021_12_trip_data_final.csv+]</parent-name>
+            <remote-alias>Table Name</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[2021_12_trip_data_final.csv_E0D17BE4A2214D2BA023E15EAC7D36D3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='datetime' hidden='true' name='[F16]' role='dimension' type='ordinal' />
+      <column datatype='integer' hidden='true' name='[F17]' role='measure' type='quantitative' />
+      <column datatype='integer' hidden='true' name='[F18]' role='measure' type='quantitative' />
+      <column datatype='string' hidden='true' name='[Table Name]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='full-year_trip_data' datatype='table' name='[__tableau_internal_object_id__].[2021_12_trip_data_final.csv_E0D17BE4A2214D2BA023E15EAC7D36D3]' role='measure' type='quantitative' />
+      <column caption='Day Of Week' datatype='integer' name='[day_of_week]' role='dimension' type='quantitative' />
+      <column aggregation='Avg' caption='End Lat' datatype='real' name='[end_lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='End Lng' datatype='real' name='[end_lng]' role='measure' type='quantitative' />
+      <column caption='End Station Id' datatype='string' name='[end_station_id]' role='dimension' type='nominal' />
+      <column caption='End Station Name' datatype='string' name='[end_station_name]' role='dimension' type='nominal' />
+      <column caption='Ended At' datatype='datetime' name='[ended_at]' role='dimension' type='ordinal' />
+      <column caption='Member Casual' datatype='string' name='[member_casual]' role='dimension' type='nominal' />
+      <column caption='Ride Id' datatype='string' name='[ride_id]' role='dimension' type='nominal' />
+      <column caption='Ride Length(Min)' datatype='real' name='[ride_length(min)]' role='measure' type='quantitative' />
+      <column caption='Rideable Type' datatype='string' name='[rideable_type]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Start Lat' datatype='real' name='[start_lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Start Lng' datatype='real' name='[start_lng]' role='measure' type='quantitative' />
+      <column caption='Start Station Id' datatype='string' name='[start_station_id]' role='dimension' type='nominal' />
+      <column caption='Start Station Name' datatype='string' name='[start_station_name]' role='dimension' type='nominal' />
+      <column datatype='string' hidden='true' name='[started_at 1]' role='dimension' type='nominal' />
+      <column caption='Started At' datatype='datetime' name='[started_at]' role='dimension' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='10000' show-hidden-fields='true' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='full-year_trip_data' id='2021_12_trip_data_final.csv_E0D17BE4A2214D2BA023E15EAC7D36D3'>
+            <properties context=''>
+              <relation all='true' name='2021_12_trip_data_final.csv+' type='union'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='string' name='ride_id' />
+                  <column datatype='string' name='rideable_type' />
+                  <column datatype='datetime' name='started_at' />
+                  <column datatype='datetime' name='ended_at' />
+                  <column datatype='string' name='start_station_name' />
+                  <column datatype='string' name='start_station_id' />
+                  <column datatype='string' name='end_station_name' />
+                  <column datatype='string' name='end_station_id' />
+                  <column datatype='real' name='start_lat' />
+                  <column datatype='real' name='start_lng' />
+                  <column datatype='real' name='end_lat' />
+                  <column datatype='real' name='end_lng' />
+                  <column datatype='string' name='member_casual' />
+                  <column datatype='real' name='ride_length(min)' />
+                  <column datatype='integer' name='day_of_week' />
+                  <column datatype='string' name='started_at 1' />
+                  <column datatype='datetime' name='F16' />
+                  <column datatype='integer' name='F17' />
+                  <column datatype='integer' name='F18' />
+                  <column datatype='string' name='Table Name' />
+                </columns>
+                <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2021_12_trip_data_final.csv' table='[2021_12_trip_data_final#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='string' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='string' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                    <column datatype='real' name='ride_length(min)' ordinal='13' />
+                    <column datatype='integer' name='day_of_week' ordinal='14' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_01_trip_data_final.csv' table='[2022_01_trip_data_final#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='string' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='string' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                    <column datatype='real' name='ride_length(min)' ordinal='13' />
+                    <column datatype='integer' name='day_of_week' ordinal='14' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_02_trip_data_final.csv' table='[2022_02_trip_data_final#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='string' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='string' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                    <column datatype='real' name='ride_length(min)' ordinal='13' />
+                    <column datatype='integer' name='day_of_week' ordinal='14' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_03_trip_data_final.csv' table='[2022_03_trip_data_final#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='string' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='string' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                    <column datatype='real' name='ride_length(min)' ordinal='13' />
+                    <column datatype='integer' name='day_of_week' ordinal='14' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_04_trip_data_final.csv' table='[2022_04_trip_data_final#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='string' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='string' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                    <column datatype='real' name='ride_length(min)' ordinal='13' />
+                    <column datatype='integer' name='day_of_week' ordinal='14' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_05_trip_data_final.csv' table='[2022_05_trip_data_final#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='string' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='string' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                    <column datatype='real' name='ride_length(min)' ordinal='13' />
+                    <column datatype='integer' name='day_of_week' ordinal='14' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_06_trip_data_final.csv' table='[2022_06_trip_data_final#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='string' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='string' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                    <column datatype='real' name='ride_length(min)' ordinal='13' />
+                    <column datatype='integer' name='day_of_week' ordinal='14' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_07_trip_data_final.csv' table='[2022_07_trip_data_final#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='string' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='string' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                    <column datatype='real' name='ride_length(min)' ordinal='13' />
+                    <column datatype='integer' name='day_of_week' ordinal='14' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_08_trip_data_final.csv' table='[2022_08_trip_data_final#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='string' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='string' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                    <column datatype='real' name='ride_length(min)' ordinal='13' />
+                    <column datatype='integer' name='day_of_week' ordinal='14' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_09_trip_data_final.csv' table='[2022_09_trip_data_final#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='string' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='string' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                    <column datatype='real' name='ride_length(min)' ordinal='13' />
+                    <column datatype='string' name='started_at 1' ordinal='14' />
+                    <column datatype='datetime' name='F16' ordinal='15' />
+                    <column datatype='integer' name='F17' ordinal='16' />
+                    <column datatype='integer' name='F18' ordinal='17' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_10_trip_data_final.csv' table='[2022_10_trip_data_final#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='string' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='string' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                    <column datatype='real' name='ride_length(min)' ordinal='13' />
+                    <column datatype='integer' name='day_of_week' ordinal='14' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.1lonkap0i5sz5v1bzxvum0m7rhbf' name='2022_11_trip_data_final.csv' table='[2022_11_trip_data_final#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                    <column datatype='string' name='ride_id' ordinal='0' />
+                    <column datatype='string' name='rideable_type' ordinal='1' />
+                    <column datatype='datetime' name='started_at' ordinal='2' />
+                    <column datatype='datetime' name='ended_at' ordinal='3' />
+                    <column datatype='string' name='start_station_name' ordinal='4' />
+                    <column datatype='string' name='start_station_id' ordinal='5' />
+                    <column datatype='string' name='end_station_name' ordinal='6' />
+                    <column datatype='string' name='end_station_id' ordinal='7' />
+                    <column datatype='real' name='start_lat' ordinal='8' />
+                    <column datatype='real' name='start_lng' ordinal='9' />
+                    <column datatype='real' name='end_lat' ordinal='10' />
+                    <column datatype='real' name='end_lng' ordinal='11' />
+                    <column datatype='string' name='member_casual' ordinal='12' />
+                    <column datatype='real' name='ride_length(min)' ordinal='13' />
+                    <column datatype='integer' name='day_of_week' ordinal='14' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontname='Tableau Semibold'>Number of Trips Per Month by User Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Full-year_trip_data' name='federated.1ajpq2r0gcaima1d4vuvv1uut7fc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ajpq2r0gcaima1d4vuvv1uut7fc'>
+            <column-instance column='[ride_id]' derivation='Count' name='[cnt:ride_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Member Casual' datatype='string' name='[member_casual]' role='dimension' type='nominal' />
+            <column-instance column='[started_at]' derivation='Month' name='[mn:started_at:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[member_casual]' derivation='None' name='[none:member_casual:nk]' pivot='key' type='nominal' />
+            <column caption='Ride Id' datatype='string' name='[ride_id]' role='dimension' type='nominal' />
+            <column caption='Started At' datatype='datetime' name='[started_at]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1ajpq2r0gcaima1d4vuvv1uut7fc].[none:member_casual:nk]'>
+            <groupfilter function='level-members' level='[none:member_casual:nk]' />
+          </filter>
+          <slices>
+            <column>[federated.1ajpq2r0gcaima1d4vuvv1uut7fc].[none:member_casual:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1ajpq2r0gcaima1d4vuvv1uut7fc].[cnt:ride_id:qk]' scope='rows' value='Total Number of Rides' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1ajpq2r0gcaima1d4vuvv1uut7fc].[mn:started_at:ok]' value='91' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1ajpq2r0gcaima1d4vuvv1uut7fc].[cnt:ride_id:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1ajpq2r0gcaima1d4vuvv1uut7fc].[none:member_casual:nk]' value='User Type'>
+              <formatted-text>
+                <run>User Type</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1ajpq2r0gcaima1d4vuvv1uut7fc].[none:member_casual:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1ajpq2r0gcaima1d4vuvv1uut7fc].[cnt:ride_id:qk]</rows>
+        <cols>[federated.1ajpq2r0gcaima1d4vuvv1uut7fc].[mn:started_at:ok]</cols>
+      </table>
+      <simple-id uuid='{F0DBBDEB-A236-4EDC-A191-E60BD137EB82}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1ajpq2r0gcaima1d4vuvv1uut7fc].[none:member_casual:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ajpq2r0gcaima1d4vuvv1uut7fc].[:Measure Names]</field>
+            <field>[federated.1ajpq2r0gcaima1d4vuvv1uut7fc].[none:member_casual:nk]</field>
+            <field>[federated.1ajpq2r0gcaima1d4vuvv1uut7fc].[none:ride_id:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B7E46B5C-A787-4EC9-919A-BE86F30D1156}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Sheet 1' width='384'>
+      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
+      RK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
